@@ -1,0 +1,67 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.igloosec.smartguard.microservices.servers.web.login.mapper.LoginMapper">
+
+
+    <select id="selectLoginUser" parameterType="String" resultType="LoginInfo">
+      SELECT
+			USER_ID
+			,USER_ID as USER_NAME
+            ,NAME
+            ,PASSWORD
+            ,TELEPHONE
+            ,EMAIL
+            ,APPLY_REASON
+            ,USE_START_DATE
+            ,USE_END_DATE
+            ,PASSWORD_RESET_YN
+            ,UAC_CD
+            ,API_ACCESS_KEY
+            ,ACCOUNT_STATUS
+            ,LOGIN_FAIL_COUNT
+            ,LATEST_LOGIN_DATE
+            ,AVATAR_IMAGE
+            ,CREATE_USER_ID
+            ,CREATE_DATE
+            ,MODIFY_USER_ID
+            ,MODIFY_DATE
+		FROM
+			user
+		WHERE
+			USER_ID = #{userId}
+	</select>
+
+    <select id="selectLoginCount" resultType="integer">
+      SELECT
+			COUNT(USER_ID)
+		FROM
+			user
+		WHERE
+			USER_ID = #{userId}
+	</select>
+
+    <update id="updateLoginAccessStatus" parameterType="LoginInfo">
+        UPDATE
+            user
+        SET
+        <choose>
+            <when test="accountStatus == 'LOGIN_SC'">
+                LATEST_LOGIN_DATE = now()
+                ,LOGIN_FAIL_COUNT = 0
+                ,ACCOUNT_STATUS = #{accountStatus}
+            </when>
+            <when test="accountStatus == 'LOGIN_FA'">
+                LOGIN_FAIL_COUNT = LOGIN_FAIL_COUNT + 1
+            </when>
+            <otherwise>
+                ACCOUNT_STATUS = #{accountStatus}
+            </otherwise>
+        </choose>
+        WHERE
+            USER_ID = #{userId}
+    </update>
+
+
+</mapper>
