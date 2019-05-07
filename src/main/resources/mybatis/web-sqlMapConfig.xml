@@ -22,7 +22,7 @@
 	</settings>
 
 	<typeAliases>
-        <typeAlias alias="LoginInfo" type="com.igloosec.smartguard.microservices.servers.web.login.model.LoginInfo" />
+        <typeAlias alias="LoginInfo" type="com.playd.microservices.servers.web.login.model.LoginInfo" />
 	</typeAliases>
 
 	<mappers>

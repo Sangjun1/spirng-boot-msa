@@ -1,8 +1,8 @@
 package com.igloosec.smartguard.microservice.servers.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.igloosec.smartguard.microservices.servers.web.WebServer;
-import com.igloosec.smartguard.microservices.servers.web.login.model.LoginInfo;
+import com.playd.microservices.servers.web.WebServer;
+import com.playd.microservices.servers.web.login.model.LoginInfo;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

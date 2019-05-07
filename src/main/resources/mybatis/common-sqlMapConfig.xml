@@ -22,7 +22,7 @@
 	</settings>
 
 	<typeAliases>
-        <typeAlias alias="User" type="com.igloosec.smartguard.microservices.servers.commons.user.model.User" />
+        <typeAlias alias="User" type="com.playd.microservices.servers.commons.user.model.User" />
 	</typeAliases>
 
 	<mappers>
