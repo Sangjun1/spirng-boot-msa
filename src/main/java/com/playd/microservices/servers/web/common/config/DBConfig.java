@@ -1,5 +1,5 @@
 /**
- * com.igloosec.smartguard.microservices.servers.web.common.config .
+ * com.playd.microservice.microservices.servers.web.common.config .
  * 패키지 위치.
  */
 package com.playd.microservices.servers.web.common.config;

@@ -1,5 +1,5 @@
 /**
- * com.igloosec.smartguard.microservices.servers.web.login.mapper .
+ * com.playd.microservice.microservices.servers.web.login.mapper .
  * 패키지 위치
  *
  */

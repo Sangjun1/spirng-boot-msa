@@ -26,6 +26,6 @@
 	</typeAliases>
 
 	<mappers>
-        <mapper resource="mybatis/mapper/com/igloosec/smartguard/microservices/web/common/common-mapper.xml"/>
+        <mapper resource="mybatis/mapper/com/playd/microservices/web/common/common-mapper.xml"/>
 	</mappers>
 </configuration>

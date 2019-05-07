@@ -1,5 +1,5 @@
 /**
- * com.igloosec.smartguard.microservices.servers.web.login.model .
+ * com.playd.microservice.microservices.servers.web.login.model .
  * 패키지 위치
  *
  */

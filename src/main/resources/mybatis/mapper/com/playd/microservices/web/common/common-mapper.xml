@@ -2,7 +2,7 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.igloosec.smartguard.microservices.servers.web.common.mapper.CommonMapper">
+<mapper namespace="com.playd.microservices.servers.web.common.mapper.CommonMapper">
 
 	<select id="selectCommonTest"  resultType="int">
 		SELECT 1
