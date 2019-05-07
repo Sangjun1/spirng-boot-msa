@@ -1,4 +1,4 @@
-package com.igloosec.smartguard.microservice.servers.web;
+package com.playd.microservice.servers.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

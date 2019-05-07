@@ -1,4 +1,4 @@
-package com.igloosec.smartguard.microservice.servers.web;
+package com.playd.microservice.servers.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playd.microservices.servers.web.WebServer;
