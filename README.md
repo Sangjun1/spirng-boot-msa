@@ -1,4 +1,4 @@
-# Srping-boot-msa
+# spring-boot-msa
 > 이상준
 
 >MAS 기존 샘플
